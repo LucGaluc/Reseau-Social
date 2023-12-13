@@ -1,0 +1,114 @@
+.recherche {
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 20vh;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #005fde;
+    background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%);
+    color: white;
+    padding: 20px;
+}
+.pagination {
+    background-size: 160% auto;
+    background-image: linear-gradient(to right, #005fde 0%, #fc00ff 100%);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+}
+.pagination:hover {
+    transition: ease 0.5s;
+    background-position: right center;
+}
+.cardi {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 10vh;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    align-items: center;
+    text-align: center;
+}
+.searchBarContainer {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.cardContainer {
+    background-color: rgba(0, 0, 0, 0, 5);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.navbar {
+    background-color: #005fde;
+    color: white;
+    padding: 10px;
+    width: 20%; /* Largeur navbar */
+}
+.lisearch {
+    width: 100vh;
+}
+p {
+    font-size: 16px;
+}
+.changementPage {
+    background-image: linear-gradient(to right, #005fde 0%, #fc00ff 100%);
+}
+.changementP {
+    background-size: 160% auto;
+    margin-left: 20vh;
+    background-image: linear-gradient(to right, #005fde 0%, #fc00ff 100%);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+}
+.changementP:hover {
+    transition: ease 0.5s;
+    background-position: right center;
+    font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+    .lisearch {
+        width: 50vh;
+    }
+}
+@media (max-width: 768px) {
+    .recherche {
+        margin: 0;
+        padding: 10px; /* Réduire l'espacement sur les écrans plus petits */
+    }
+    .pagination {
+        margin: 0;
+    }
+    .lisearch {
+        width: 20vh;
+    }
+    .navbar {
+        width: 100%; /* Barre de navigation en plein écran sur les écrans plus petits */
+    }
+
+    .content {
+        width: 100%; /* Contenu principal en plein écran sur les écrans plus petits */
+    }
+
+    input[type="text"] {
+        margin-bottom: 10px; /* Réduire la marge sous le champ de recherche sur les écrans plus petits */
+    }
+    .changementPage {
+        background-color: #005fde;
+        background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%);
+        color: white;
+        padding: 10px;
+    }
+}

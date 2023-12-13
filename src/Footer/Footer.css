@@ -1,0 +1,12 @@
+.footer {
+    background-color: #005fde;
+    background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%);
+    color: white; /* Couleur du texte en blanc */
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .footer {
+        padding: 5px; /* Réduire l'espacement */
+    }
+}

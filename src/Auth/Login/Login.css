@@ -1,0 +1,128 @@
+.connexion {
+  background-color: #005fde;
+  /* background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%); */
+  background-image: url("https://th.bing.com/th/id/R.7b0731c63c98ac0cd097f762492181b8?rik=mQDG8qlbcrJskg&pid=ImgRaw&r=0");
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navContainer {
+  height: 100vh;
+  width: 15vw;
+  background-color: black;
+  position: fixed;
+}
+.middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  padding: 25px;
+  background-color: #212121;
+  box-shadow: 6px 9px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+.pageTitle {
+  background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%);
+  padding: 5%;
+  border-radius: 16px;
+  text-align: center;
+  border: white solid 2px;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.identifiant {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-control:focus {
+  background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%);
+}
+
+.buttonValider button {
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #005fde 0%, #fc00ff 100%);
+  background-size: 180% auto;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonValider button:hover {
+  transition: ease 0.5s;
+  background-position: right center;
+}
+
+.buttonRegister button {
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #005fde 0%, #fc00ff 100%);
+  background-size: 180% auto;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonRegister button:hover {
+  transition: ease 0.5s;
+  background-position: right center;
+}
+.footer {
+  background-color: #005fde;
+  background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%);
+  color: white; /* Couleur du texte en blanc */
+  text-align: center;
+  padding: 10px;
+}
+.buttonOublier button {
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #005fde 0%, #fc00ff 100%);
+  background-size: 180% auto;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonOublier button:hover {
+  transition: ease 0.5s;
+  background-position: right center;
+}
+@media (max-width: 768px) {
+  .connexion {
+    flex-direction: column; /* Passe à une disposition en colonne */
+    align-items: center;
+  }
+
+  .container {
+    width: 90%; /* Réduire la largeur du conteneur principal */
+  }
+}

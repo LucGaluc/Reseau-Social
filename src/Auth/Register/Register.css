@@ -1,0 +1,89 @@
+.navContainer {
+  height: 100vh;
+  width: 15vw;
+  background-color: black;
+  position: fixed;
+}
+.container {
+  background-color: #212121;
+  box-shadow: 6px 9px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.wrapperRegister {
+  height: 100vh;
+  width: 100vw;
+  /* background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%); */
+  background-image: url("https://th.bing.com/th/id/R.7b0731c63c98ac0cd097f762492181b8?rik=mQDG8qlbcrJskg&pid=ImgRaw&r=0");
+}
+.pageTitle {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 80%;
+  max-width: 400px;
+  background-color: #212121;
+}
+
+.identifiant {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: white;
+}
+
+.wrapperRegister input {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #424242;
+  border: none;
+  appearance: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.wrapperRegister input:focus {
+  background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%);
+}
+
+.buttonInscription {
+  background-image: linear-gradient(to right, #005fde 0%, #fc00ff 100%);
+  background-size: 180% auto;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.buttonInscription:hover {
+  transition: ease 0.5s;
+  background-position: right center;
+}
+@media (max-width: 768px) {
+
+  .container {
+    text-align: center; /* Centrer le contenu sur les écrans plus petits */
+  }
+
+  form {
+    width: 90%; /* Réduire la largeur du formulaire sur les écrans plus petits */
+  }
+}

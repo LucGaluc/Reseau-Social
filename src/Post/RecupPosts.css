@@ -1,0 +1,151 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.postsExistants {
+  font-size: 50px;
+  text-align: center;
+  margin: 20px 0;
+  text-decoration: underline;
+  color: rgba(2, 2, 2, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  text-align: left;
+}
+.publi {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.postPubli {
+  text-align: center;
+  color: white;
+}
+.tittlePubli {
+  text-align: center;
+  color: rgb(233, 152, 209);
+  text-decoration: underl;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btnCom {
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btnLike {
+  background-color: #0f4468;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnLike:hover {
+  background-color: #5c063f;
+}
+.btnCom:hover {
+  background-color: #962a72;
+}
+
+.galacticContainer {
+  background-image: url("https://th.bing.com/th/id/R.7b0731c63c98ac0cd097f762492181b8?rik=mQDG8qlbcrJskg&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.commentsSection {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.commentsSection p {
+  color: #fff;
+}
+.navContainer {
+  height: 100vh;
+  width: 15vw;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+}
+
+.contentContainer {
+  margin-left: 15vw;
+  padding: 20px;
+}
+.sectionCom {
+  display: flex;
+  gap: 20px;
+}
+.motCom {
+  text-align: left;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.tittleCom {
+  color: #caa2a2;
+}
+
+@media screen and (max-width: 768px) {
+  .postsExistants {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+
+  li {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .motCom {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .btnCom {
+    padding: 5px 20px;
+  }
+  .btnLike {
+    width: 20%;
+  }
+  .contentContainer {
+    margin-left: 0;
+  }
+}

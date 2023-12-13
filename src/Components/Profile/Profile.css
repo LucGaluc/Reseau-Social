@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  /* background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%); */
+
+  background-image: url("https://th.bing.com/th/id/R.7b0731c63c98ac0cd097f762492181b8?rik=mQDG8qlbcrJskg&pid=ImgRaw&r=0");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileLine2 {
+  display: flex;
+}
+
+.editProfileContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profileContainer label {
+  margin-right: 10px;
+}
+
+.profileContainer,
+.editProfileContainer {
+  min-height: 80vh;
+  height: 92%;
+  width: 40%;
+  padding: 25px;
+  background-color: #212121;
+  box-shadow: 6px 9px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.profileContainer h2,
+.editProfileContainer h2 {
+  background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%);
+  padding: 5%;
+  border-radius: 16px;
+  margin-bottom: 5%;
+  text-align: center;
+  border: white solid 2px;
+  color: white;
+}
+
+.profileContainer label,
+.editProfileContainer label {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.renderInfo {
+  font-size: 16px;
+}
+
+.editProfileContainer input {
+  width: 100%;
+  border: none;
+  appearance: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #424242;
+}
+.editProfileContainer input:focus {
+  background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%);
+}
+
+.buttonStyle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.editButton {
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #005fde 0%, #fc00ff 100%);
+  background-size: 180% auto;
+  width: 70%;
+  padding: 20px;
+  border: none;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.editButton:hover {
+  transition: ease 0.5s;
+  background-position: right center;
+}
+
+.navBarContainer {
+  height: 100vh;
+  width: 15vw;
+  background-color: black;
+  position: fixed;
+}

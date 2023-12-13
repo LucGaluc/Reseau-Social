@@ -1,0 +1,116 @@
+.card {
+    height: 55%;
+    width: 30%;
+    border-radius: 15px;
+    overflow: hidden;
+   position: relative;
+}
+.cardText{
+    z-index: 2;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.cardImage{
+    height: 100%;
+    width: 100%;
+}
+.cardImage img {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.card:hover .cardImage{
+    opacity: 0.5;
+}
+.card:hover .cardText{
+    opacity: 1;
+}
+
+/* pop up */
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 4;
+}
+.overlay{
+    background-color: rgba(49, 49, 49, 0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    transform: translate(-41%, -28%);
+    line-height: 1.4;
+    background-color: #0053c3;
+    background-image: linear-gradient(90deg, #0053c3 0%, #da05f7 100%);
+    padding: 2%;
+    border-radius: 3px;
+    height: 92%;
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+}
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+body.active-modal{
+    overflow-y: hidden;
+}
+.modalImage{
+    width: 28.6%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.modalCommentaire{
+    width: calc(100% - 28.6%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-img{
+    width: 100%;
+    height: 54%;
+}
+.modal-title{
+    width: 100%;
+    height: 5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+.modal_commentaire_container{
+    height: 100%;
+    width: 90%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal_com{
+    height: 20%;
+    width: 100%;
+    margin: 2% 0;
+    border-radius: 14px;
+    background-color: #0000007a;
+    padding: 5%;
+    text-align: left;
+}

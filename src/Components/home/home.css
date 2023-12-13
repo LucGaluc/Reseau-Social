@@ -1,0 +1,63 @@
+.homeContainer {
+  background-color: #005fde;
+  /* background-image: linear-gradient(90deg, #005fde 0%, #fc00ff 100%); */
+  background-image: url("https://th.bing.com/th/id/R.7b0731c63c98ac0cd097f762492181b8?rik=mQDG8qlbcrJskg&pid=ImgRaw&r=0");
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.navContainer {
+  height: 100vh;
+  width: 15vw;
+  background-color: black;
+  position: fixed;
+}
+section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+h1 {
+  margin: 0;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.titreHome {
+  height: 100vh;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topFilm,
+.topSerie {
+  height: 100vh;
+  width: 85%;
+  gap: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.affichageTop {
+  height: 60%;
+  width: 90%;
+  background-color: rgb(35, 35, 35);
+  border-radius: 25px;
+}
+.affichageList {
+  height: 30%;
+  width: 90%;
+  background-color: rgb(35, 35, 35);
+  border-radius: 25px;
+}
+@media (max-width: 768px) {
+  .titreHome{
+    width: 100vw;
+  }
+}

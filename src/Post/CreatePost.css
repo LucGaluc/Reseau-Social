@@ -1,0 +1,50 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.cardCreatePostContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://th.bing.com/th/id/R.7b0731c63c98ac0cd097f762492181b8?rik=mQDG8qlbcrJskg&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cardCreatePost .titre {
+  font-size: 40px;
+  color: rgb(233, 152, 209);
+  text-align: center;
+  padding: 20px;
+}
+
+.formulaireContainer .form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px 0px 40px 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.TextAreaPost textarea {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  resize: none;
+}
+
+.btnCreer {
+  background-color: #196597;
+  color: #fff;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
